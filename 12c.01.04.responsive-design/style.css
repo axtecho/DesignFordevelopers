@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --displayFont: "EB Garamond", sans-serif;
+  --bodyFont: "Lato", sans-serif;
+}
+body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+  margin: 0 1rem;
+}
+h1 {
+  font-family: var(--displayFont), sans-serif;
+  line-height: 2rem;
+}
+h2 {
+  font-family: var(--displayFont), sans-serif;
+}
+h3 {
+  font-family: var(--displayFont), sans-serif;
+}
+p {
+  font-family: var(--bodyFont), sans-serif;
+}
+nav {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+nav > ul {
+  display: none;
+}
+nav > a {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: serif;
+  font-style: italic;
+}
+nav > button {
+  width: 100px;
+  height: 32px;
+  justify-self: center;
+  align-self: center;
+}
+.burgericon {
+  order: 2;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0.4rem;
+  z-index: 2;
+}
+#menu-btn-svg {
+  width: 46px;
+  height: 46px;
+  justify-self: center;
+  cursor: pointer;
+}
+#side-menu ul {
+  display: flex;
+  flex-flow: wrap-reverse column;
+  align-content: center;
+  list-style-type: none;
+}
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+.side-nav a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  opacity: 0.9;
+  white-space: nowrap;
+  font-size: 2rem;
+}
+
+.side-nav a:hover {
+  font-weight: bold;
+}
+.navbar-nav a:hover {
+  font-weight: bold;
+}
+.side-nav .btn-close {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+header {
+  width: 100%;
+  grid-column: 1/-1;
+  padding-top: 2rem;
+}
+.header_text > h1 {
+  margin-bottom: 0.8rem;
+}
+.header_graphics {
+  width: 100%;
+}
+
+.header_graphics img {
+  width: 100%;
+}
+#advantages {
+  grid-column: 1/-1;
+  margin-top: 2rem;
+}
+.advantages_card {
+  margin-bottom: 2rem;
+}
+.advantages_card_graphics {
+  width: 100%;
+}
+.advantages_card_graphics img {
+  width: 100%;
+}
+#product {
+  grid-column: 1/-1;
+}
+.product_text article p {
+  margin-left: 1.2rem;
+}
+.product_graphics {
+  width: 100%;
+}
+.product_graphics img {
+  width: 100%;
+}
+
+.highlight {
+  grid-column: 1/-1;
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.highlight_small_cards {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1rem;
+}
+.highlight_small_cards > div {
+  background-color: navy;
+  width: 130px;
+  color: white;
+  padding: 1rem;
+  border-radius: 12.5px;
+}
+.highlight_small_cards > div > h3 {
+  padding-bottom: 1rem;
+}
+.highlight > button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+#team {
+  grid-column: 1/-1;
+  margin-top: 3rem;
+}
+.team_graphics {
+  width: 100%;
+  margin-top: 1rem;
+}
+.team_graphics img {
+  width: 100%;
+}
+
+.team_text {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.team_text > ul {
+  list-style-type: none;
+
+  padding: 20px;
+}
+
+.team_text > ul li {
+  color: #00002b;
+  margin: 5px;
+}
+#contact {
+  grid-column: 1/-1;
+  margin-top: 3rem;
+}
+#contact > p {
+  margin-bottom: 1rem;
+}
+#contact_form {
+  display: flex;
+  flex-direction: column;
+}
+#contact_form > .form_group {
+  display: flex;
+  justify-content: space-between;
+}
+.form_group > button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+footer {
+  grid-column: 1/-1;
+  margin-top: 3rem;
+}
+footer > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer > div > ul {
+  list-style-type: none;
+}
+footer > section {
+  margin-bottom: 3rem;
+}
+footer > section > div {
+  margin-top: 2rem;
+}
+footer > section > div:first-of-type {
+  display: flex;
+  justify-content: space-between;
+}
+footer > section > div:first-of-type > ul {
+  list-style-type: none;
+}
+footer > section > div:last-of-type {
+  display: flex;
+  justify-content: space-between;
+}
+footer > section > div:last-of-type > ul {
+  list-style-type: none;
+}
+/* 
+------------------------------------------- */
+.additionalWidth {
+  width: 70%;
+}
+.lineOne {
+  transform: rotate(45deg) translate(-3px, 10.5px);
+  transform-origin: center center;
+  transition: 0.5s;
+}
+.lineTwo {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+.lineThree {
+  transform: rotate(-45deg) translate(4px, -9px);
+  transform-origin: center center;
+  transition: 0.5s;
+}
