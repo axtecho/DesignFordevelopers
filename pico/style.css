@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 0 3vw;
+}
+:root {
+  --displayFont: "EB Garamond", sans-serif;
+  --bodyFont: "Lato", sans-serif;
+  --primary: #546e7a;
+}
+
+nav {
+  padding: 0vw 1vw;
+}
+footer > div > ul > li {
+  list-style-type: none;
+}
+
+footer > section > div > ul > li {
+  list-style-type: none;
+}
+
+#team > h2 {
+  margin: 0;
+}
+
+#team > div > article {
+  margin: 0;
+}
+
+.highlight_small_cards > div {
+  box-shadow: var(--card-box-shadow);
+  padding: 2vw;
+}
+
+#product > h2 {
+  /*   margin: 0;
+ */
+}
+
+.product_text > article {
+  margin: 0;
+}
+
+#advantages > h2 {
+  margin: 0;
+}
+.advantages_cards > article {
+  margin: 0;
+}
