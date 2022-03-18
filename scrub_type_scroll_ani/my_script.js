@@ -8,9 +8,10 @@ tl.to("#the_div", {
   duration: 2,
   scrollTrigger: {
     trigger: "#the_div",
+    scrub: 0.5,
     markers: true,
     start: "top 75%",
     end: "bottom 25%",
-    toggleActions: "play pause resume reset",
+    pin: true,
   },
 });
